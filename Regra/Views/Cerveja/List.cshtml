@@ -1,0 +1,22 @@
+﻿@using Regra.Models
+@model IEnumerable<Cerveja>
+
+
+<div><h2>Todos os Produtos</h2></div>
+
+@foreach (var cerveja in Model)
+{
+    // class="col-sm-4 col-lg-4 col-md-4"
+
+       // <div class="ctnFlex">
+<div>
+    <img src="@cerveja.ImagemUrl" class="rounded" alt="" />
+    <h3 class="pull-righ"> @cerveja.Preco.ToString("c") </h3>
+
+    <h3>@cerveja.Nome</h3>
+    <p>@cerveja.DescricaoCurta</p>
+
+</div>
+
+            
+  }
